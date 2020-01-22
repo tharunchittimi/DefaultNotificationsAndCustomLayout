@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DefaultNotifications</string>
+    <string name="big_picture_style">Hi Big Notification</string>
+</resources>

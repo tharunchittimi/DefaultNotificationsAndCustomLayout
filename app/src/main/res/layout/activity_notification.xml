@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/defaultNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Default Notification!"
+            app:layout_constraintBottom_toTopOf="@id/smallNotification"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/smallNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Small Notification!"
+            app:layout_constraintBottom_toTopOf="@id/bigNotification"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/defaultNotification" />
+
+        <Button
+            android:id="@+id/bigNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Big Notification!"
+            app:layout_constraintBottom_toTopOf="@id/combineNotification"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/smallNotification" />
+
+        <Button
+            android:id="@+id/combineNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Combine Notification!"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bigNotification"
+            app:layout_constraintBottom_toTopOf="@id/customDefaultNotification"/>
+
+        <Button
+            android:id="@+id/customDefaultNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="custom Default Notification"
+            app:layout_constraintBottom_toTopOf="@id/customSmallNotification"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/combineNotification" />
+
+        <Button
+            android:id="@+id/customSmallNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="custom Small Notification"
+            app:layout_constraintBottom_toTopOf="@id/customBigNotification"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/customDefaultNotification" />
+
+        <Button
+            android:id="@+id/customBigNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="custom Big Notification"
+            app:layout_constraintBottom_toTopOf="@id/customCombineNotification"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/customSmallNotification" />
+
+        <Button
+            android:id="@+id/customCombineNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="customCombineNotification"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/customBigNotification"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="20dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
